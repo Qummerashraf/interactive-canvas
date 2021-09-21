@@ -10,6 +10,9 @@ canvas > img {
 
 .buttons {
   text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #circle,
@@ -25,6 +28,8 @@ canvas > img {
   width: 50%;
   margin: 10px;
   border-radius: 10px;
+  padding: 15px !important;
+
 }
 
 #circle:hover,
@@ -60,7 +65,9 @@ canvas > img {
   width: 100%;
   text-align: center;
   margin: 20px auto;
-}
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);}
 
 #canvasImg img {
   border: 2px solid rgb(184, 184, 184);
@@ -76,7 +83,9 @@ canvas > img {
   font-weight: 600;
   color: aliceblue;
   margin: 30px auto;
-  transition: transform 1s;
+  transition: transform 500ms;
+  border-radius: 10px;
+
 }
 
 #down-center {
