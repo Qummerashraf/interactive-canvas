@@ -1,0 +1,127 @@
+canvas > img {
+  width: 20%;
+  height: 20%;
+}
+
+#can-adj {
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#circle,
+#rect,
+#poly,
+#add,
+#tri {
+  font-size: 16px;
+  color: rgb(241, 255, 244);
+  border: none;
+  box-shadow: 0px 0px 3px 1px rgb(163, 163, 163);
+  transition: transform 1s;
+  width: 50%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#circle:hover,
+#tri:hover,
+#rect:hover,
+#poly:hover,
+#add:hover,
+#c:hover {
+  transform: scale(1.2);
+}
+
+#circle {
+  background-color: rgb(41, 11, 124);
+}
+
+#poly {
+  background-color: rgb(0, 184, 31);
+}
+
+#rect {
+  background-color: rgb(255, 8, 0);
+}
+
+#tri {
+  background-color: rgb(80, 0, 112);
+}
+
+#add {
+  background-color: rgb(0, 108, 141);
+}
+
+#canvasImg {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#canvasImg img {
+  border: 2px solid rgb(184, 184, 184);
+  margin: 20px auto;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#c {
+  background-color: dodgerblue;
+  max-width: 200px;
+  font-size: 14px;
+  font-weight: 600;
+  color: aliceblue;
+  margin: 30px auto;
+  transition: transform 1s;
+}
+
+#down-center {
+  text-align: center;
+}
+
+#head-box {
+  box-shadow: 0px 0px 5px 2px grey;
+  margin-bottom: 30px;
+  padding: 5px 0px;
+}
+#Home button {
+  width: 100px;
+  background-color: white;
+  box-shadow: none;
+  border-radius: 0%;
+  font-size: 20px;
+  font-weight: 700;
+  float: left;
+  padding: 5px 0px;
+  color: rgb(0, 0, 104);
+}
+
+#Home button:hover,
+#Home h2:hover {
+  color: orangered;
+}
+
+#Home h2 {
+  float: right;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px 0px;
+}
+.clear {
+  clear: both;
+  display: block;
+}
+
+#addImg {
+  background-color: rgb(72, 0, 167);
+  max-width: 200px;
+  font-size: 14px;
+  font-weight: 600;
+  color: aliceblue;
+  margin: 30px auto;
+  display: block;
+}
