@@ -64,7 +64,7 @@ canvas > img {
 
 #canvasImg img {
   border: 2px solid rgb(184, 184, 184);
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
   height: 200px;
   border-radius: 10px;
 }
@@ -122,6 +122,6 @@ canvas > img {
   font-size: 14px;
   font-weight: 600;
   color: aliceblue;
-  margin: 30px auto;
+  margin: 3px auto;
   display: block;
 }
