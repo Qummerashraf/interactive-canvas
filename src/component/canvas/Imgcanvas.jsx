@@ -8,6 +8,7 @@ import canvasToImage from "canvas-to-image";
 function Imgcanvas() {
   const { canvasImg } = useContext(Context);
   const [canvas, setCanvas] = useState("");
+  const [element, setElement] = useState([]);
 
   useEffect(() => {
     setCanvas(initCanvas());
@@ -38,7 +39,7 @@ function Imgcanvas() {
 
     // Render the polygon in canvas
     canvas.add(polygon);
-    canvas.renderAll();
+    setElement((element) => [...element, "Polygon"]);
   };
 
   const createCircle = (canvas) => {
@@ -51,6 +52,7 @@ function Imgcanvas() {
 
     // Render the circle in canvas
     canvas.add(circle);
+    setElement((element) => [...element, "Circle"]);
   };
 
   const createRect = (canvas) => {
@@ -66,6 +68,7 @@ function Imgcanvas() {
     // "add" rectangle onto canvas
     canvas.add(rect);
     canvas.renderAll();
+    setElement((element) => [...element, "Rectangle"]);
   };
 
   const createTriangle = (canvas) => {
@@ -78,6 +81,7 @@ function Imgcanvas() {
     canvas.add(triangle);
     canvas.centerObject(triangle);
     canvas.renderAll();
+    setElement((element) => [...element, "Circle"]);
   };
 
   const addText = (canvas) => {
@@ -89,6 +93,7 @@ function Imgcanvas() {
     });
 
     canvas.add(text);
+    setElement((element) => [...element, "Text"]);
   };
 
   //addimage
@@ -103,13 +108,10 @@ function Imgcanvas() {
       myImg.scaleToWidth(300);
       canvas.add(myImg);
     });
+    setElement((element) => [...element, "Image"]);
   };
 
-  /*   const deleteItem = () => {
-    if (canvas.setActiveObject()) {
-      canvas.remove();
-    }
-  }; */
+  console.log(element);
 
   const downloadImg = function () {
     canvasToImage("canvas", {
